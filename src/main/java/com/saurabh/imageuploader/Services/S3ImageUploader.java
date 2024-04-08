@@ -11,5 +11,7 @@ public interface S3ImageUploader {
 
     List<String> allFiles();
 
-    String preSignedUrl();
+    String preSignedUrl(String filename);
+
+    String getUrlByFileName(String fileName);
 }
